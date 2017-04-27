@@ -3,15 +3,15 @@ package algorithme.q0540;
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
 
-public class SingleElementInSortedArray {
+public class Q540SingleElementInSortedArray {
 	public static void main(String[] args) {
 		Object[] agrsArr = { 
 				new int[] { 1, 1, 2, 2, 5 }, 
 				new int[] { 2, 2, 5, 9, 9 }, 
 				new int[] { 3, 3, 5 },
 				new int[] { 5, 7, 7, 8, 8 } };
-		TimerUtils.batchRunAll(SingleElementInSortedArray.class, 100000, agrsArr);
-		TimerUtils.batchRun(SingleElementInSortedArray.class, "singleNonDuplicate1", 1, agrsArr);
+		TimerUtils.batchRunAll(Q540SingleElementInSortedArray.class, 100000, agrsArr);
+		TimerUtils.batchRun(Q540SingleElementInSortedArray.class, "singleNonDuplicate1", 1, agrsArr);
 	}
 
 	@RunTimer

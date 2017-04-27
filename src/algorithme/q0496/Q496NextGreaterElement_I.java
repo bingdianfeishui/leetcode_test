@@ -7,7 +7,7 @@ import java.util.Stack;
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
 
-public class NextGreaterElement_I {
+public class Q496NextGreaterElement_I {
 
 	public static void main(String[] args) {
 		int times = 100000;
@@ -15,7 +15,7 @@ public class NextGreaterElement_I {
 				{ new int[] { 4, 1, 2 }, new int[] { 1, 3, 4, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 } },
 				{ new int[] { 2, 4 }, new int[] { 1, 2, 3, 4 } } };
 
-		TimerUtils.batchRunAll(NextGreaterElement_I.class, times, argsArr);
+		TimerUtils.batchRunAll(Q496NextGreaterElement_I.class, times, argsArr);
 	}
 
 	

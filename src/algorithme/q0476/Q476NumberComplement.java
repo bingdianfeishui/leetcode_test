@@ -3,13 +3,13 @@ package algorithme.q0476;
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
 
-public class NumberComplement {
+public class Q476NumberComplement {
 	public static void main(String[] args) {
 		int times = 100000;
 		
 		Object[] argsArr = new Object[]{5, 2, 1024, Integer.MAX_VALUE - 1};
 		
-		TimerUtils.batchRunAll(NumberComplement.class, times, argsArr);
+		TimerUtils.batchRunAll(Q476NumberComplement.class, times, argsArr);
 	}
 
 	@RunTimer

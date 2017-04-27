@@ -3,12 +3,12 @@ package algorithme.q0344;
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
 
-public class ReverseString {
+public class Q344ReverseString {
 	public static void main(String[] args) {
 		int times = 100000;
 		Object[] argsArr = new Object[] {"a", "ab", "abcde", "0123456789" };
 
-		TimerUtils.batchRunAll(ReverseString.class, times, argsArr);
+		TimerUtils.batchRunAll(Q344ReverseString.class, times, argsArr);
 	}
 	
 	@RunTimer

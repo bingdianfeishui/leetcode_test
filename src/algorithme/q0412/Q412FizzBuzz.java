@@ -10,12 +10,12 @@ import java.util.stream.IntStream;
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
 
-public class FizzBuzz {
+public class Q412FizzBuzz {
 	public static void main(String[] args) {
 		int times = 100000;
 		Object[] argsArr = new Object[] { 5, 31 };
 
-		TimerUtils.batchRunAll(FizzBuzz.class, times, argsArr);
+		TimerUtils.batchRunAll(Q412FizzBuzz.class, times, argsArr);
 	}
 
 	@RunTimer

@@ -7,7 +7,7 @@ import com.lee.timer.BatchRunResult;
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
 
-public class HammingDistance {
+public class Q461HammingDistance {
 	public static void main(String[] args) {
 		Object[][] argsArr = new Object[][] { 
 				{ 1, 4 }, 
@@ -17,10 +17,10 @@ public class HammingDistance {
 				{ 1024, 16 }, 
 				{0x7fffffff, 0x7777_7777} };
 		int times = 200;
-		List<BatchRunResult> list = TimerUtils.batchRunAll(HammingDistance.class, times, argsArr);
+		List<BatchRunResult> list = TimerUtils.batchRunAll(Q461HammingDistance.class, times, argsArr);
 		System.out.println(list);
 		
-		Object[] objects1 = TimerUtils.batchRun(HammingDistance.class, "hammingDistance", times, argsArr);
+		Object[] objects1 = TimerUtils.batchRun(Q461HammingDistance.class, "hammingDistance", times, argsArr);
 		System.out.println(Arrays.toString(objects1));
 //
 //		Object[] objects2 = TimerUtils.batchRun(HammingDistance.class, "hammingDistance1", times, argsArr);

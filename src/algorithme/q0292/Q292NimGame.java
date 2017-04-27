@@ -2,7 +2,7 @@ package algorithme.q0292;
 
 import com.lee.timer.TimerUtils;
 
-public class NimGame {
+public class Q292NimGame {
 	public static void main(String[] args) {
 		int times = 100000;
 
@@ -10,7 +10,7 @@ public class NimGame {
 				
 		};
 
-		TimerUtils.batchRunAll(NimGame.class, times, argsArr);
+		TimerUtils.batchRunAll(Q292NimGame.class, times, argsArr);
 	}
 	
 	public boolean canWinNim(int n) {

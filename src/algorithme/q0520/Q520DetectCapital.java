@@ -3,7 +3,7 @@ package algorithme.q0520;
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
 
-public class DetectCapital {
+public class Q520DetectCapital {
 
 	public static void main(String[] args) {
 		int times = 100000;
@@ -11,7 +11,7 @@ public class DetectCapital {
 				 "Hello", "alaska", "D", "peaCe"
 		};
 
-		TimerUtils.batchRunAll(DetectCapital.class, times, words);
+		TimerUtils.batchRunAll(Q520DetectCapital.class, times, words);
 	}
 	
 	@RunTimer

@@ -5,14 +5,14 @@ import java.util.Arrays;
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
 
-public class LargestPalindromeProduct {
+public class Q479LargestPalindromeProduct {
 	public static void main(String[] args) {
 //		for (int i = 1; i <= 8; i++) {
 //			System.out.println("=======" + i + "=======");
 //			System.out.println(TimerUtils.run(LargestPalindromeProduct.class, "largestPalindrome",1, new Object[] { i }));
 //		}
 		
-		Object[] objects = TimerUtils.batchRun(LargestPalindromeProduct.class, "largestPalindrome", 1, new Object[][]{{1},{2},{3},{4}});
+		Object[] objects = TimerUtils.batchRun(Q479LargestPalindromeProduct.class, "largestPalindrome", 1, new Object[][]{{1},{2},{3},{4}});
 		System.out.println(Arrays.toString(objects));
 	}
 

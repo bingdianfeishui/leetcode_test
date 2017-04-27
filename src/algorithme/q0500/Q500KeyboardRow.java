@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
 
-public class KeyboardRow {
+public class Q500KeyboardRow {
 	public static void main(String[] args) {
 		int times = 100000;
 		Object[] wordsArr = new Object[]{
@@ -18,7 +18,7 @@ public class KeyboardRow {
 				new String[] { "A", "D", "avc", "ASdf" }
 		};
 
-		TimerUtils.batchRunAll(KeyboardRow.class, times, wordsArr);
+		TimerUtils.batchRunAll(Q500KeyboardRow.class, times, wordsArr);
 	}
 
 	@RunTimer

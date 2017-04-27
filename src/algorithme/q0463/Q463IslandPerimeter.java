@@ -3,7 +3,7 @@ package algorithme.q0463;
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
 
-public class IslandPerimeter {
+public class Q463IslandPerimeter {
 	public static void main(String[] args) {
 		int times = 100000;
 
@@ -27,7 +27,7 @@ public class IslandPerimeter {
 				}
 		};
 
-		TimerUtils.batchRunAll(IslandPerimeter.class, times, argsArr);
+		TimerUtils.batchRunAll(Q463IslandPerimeter.class, times, argsArr);
 	}
 
 	//穷举 O(mn) 适用于水域与陆地面积相当时。当水域比陆地面积大很多时，应该用DFS（因为所有陆地连接在一起）
@@ -128,7 +128,7 @@ public class IslandPerimeter {
         for (int i = 0; i < grid.length; i++) {
             int[] line = grid[i];
             for (int j = 0; j < line.length; j++) {
-                if (i == 0 || j == 0) {
+                if (i == 0) {
                     perimeter += grid[i][j] ^ 0;
                 }
                 if (j == 0) {

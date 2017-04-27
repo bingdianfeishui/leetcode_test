@@ -3,7 +3,7 @@ package algorithme.q0485;
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
 
-public class MaxConsecutiveOnes {
+public class Q485MaxConsecutiveOnes {
 	public static void main(String[] args) {
 		int times = 100000;
 
@@ -15,7 +15,7 @@ public class MaxConsecutiveOnes {
 				new int[] { 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1 },
 				new int[] { 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1 }, };
 
-		TimerUtils.batchRunAll(MaxConsecutiveOnes.class, times, argsArr);
+		TimerUtils.batchRunAll(Q485MaxConsecutiveOnes.class, times, argsArr);
 	}
 	
 	
