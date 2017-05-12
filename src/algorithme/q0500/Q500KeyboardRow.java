@@ -10,6 +10,19 @@ import java.util.stream.Stream;
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
 
+/**
+ * Given a List of words, return the words that can be typed using 
+ * letters of alphabet on only one row's of American keyboard like 
+ * the image below.
+ * Example 1:
+Input: ["Hello", "Alaska", "Dad", "Peace"]
+Output: ["Alaska", "Dad"]
+Note:
+You may use one character in the keyboard more than once.
+You may assume the input string will only contain letters of alphabet.
+ * @author 60238
+ *
+ */
 public class Q500KeyboardRow {
 	public static void main(String[] args) {
 		int times = 100000;
@@ -71,7 +84,6 @@ public class Q500KeyboardRow {
 		return Stream.of(words).filter(s -> s.toLowerCase().matches("[qwertyuiop]*|[asdfghjkl]*|[zxcvbnm]*"))
 				.toArray(String[]::new);
 	}
-	
 	
 	@RunTimer
     public String[] findWords4(String[] words) {

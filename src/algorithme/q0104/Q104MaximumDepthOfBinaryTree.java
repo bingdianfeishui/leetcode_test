@@ -8,6 +8,17 @@ import java.util.Stack;
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
 
+
+/**
+ * 104. Maximum Depth of Binary Tree
+ * 
+ * Given a binary tree, find its maximum depth.
+
+The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+
+ * @author Lee
+ *
+ */
 public class Q104MaximumDepthOfBinaryTree {
 
 	// Definition for a binary tree node.
@@ -30,6 +41,7 @@ public class Q104MaximumDepthOfBinaryTree {
 //		System.out.println(ret);
 	}
 
+	//generate a tree
 	private static TreeNode getNode(int leftMax, int rightMax) {
 //		TreeNode root = new TreeNode(0);
 //

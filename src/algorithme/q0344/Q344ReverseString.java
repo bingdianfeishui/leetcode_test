@@ -3,6 +3,15 @@ package algorithme.q0344;
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
 
+/**
+ * 344. Reverse String
+ * Write a function that takes a string as input and returns the string reversed.
+
+Example:
+Given s = "hello", return "olleh".
+ * @author Lee
+ *
+ */
 public class Q344ReverseString {
 	public static void main(String[] args) {
 		int times = 100000;
