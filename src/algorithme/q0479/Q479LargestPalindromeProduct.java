@@ -5,6 +5,28 @@ import java.util.Arrays;
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
 
+/**
+479. Largest Palindrome Product
+
+Find the largest palindrome made from the product of two n-digit numbers.
+
+Since the result could be very large, you should return the largest palindrome mod 1337.
+
+Example:
+
+Input: 2
+
+Output: 987
+
+Explanation: 99 x 91 = 9009, 9009 % 1337 = 987
+
+Note:
+
+The range of n is [1,8].
+ * @see https://leetcode.com/problems/largest-palindrome-product/#/description
+ * @author 60238
+ *
+ */
 public class Q479LargestPalindromeProduct {
 	public static void main(String[] args) {
 //		for (int i = 1; i <= 8; i++) {
