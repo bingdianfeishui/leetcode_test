@@ -1,4 +1,4 @@
-package algorithme.q0409;
+锘縫ackage algorithme.q0409;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -47,7 +47,7 @@ public class Q409LongestPalindrome {
 		TimerUtils.batchRunAll(Q409LongestPalindrome.class, times, argsArr);
 	}
 
-	//No. 95 testcase 出错，不知道为毛
+	//No. 95 testcase 鍑洪敊锛屼笉鐭ラ亾涓烘瘺
 	@RunTimer
 	public int longestPalindrome(String s) {
 		if (s == null || s.length() == 0) return 0;

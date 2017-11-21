@@ -1,4 +1,4 @@
-package algorithme.q0500;
+﻿package algorithme.q0500;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package algorithme.q0292;
+﻿package algorithme.q0292;
 
 import com.lee.timer.TimerUtils;
 

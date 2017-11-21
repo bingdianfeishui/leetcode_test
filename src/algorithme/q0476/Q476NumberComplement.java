@@ -1,4 +1,4 @@
-package algorithme.q0476;
+ï»¿package algorithme.q0476;
 
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
@@ -9,7 +9,7 @@ import com.lee.timer.TimerUtils;
 
 Note:
 The given integer is guaranteed to fit within the range of a 32-bit signed integer.
-You could assume no leading zero bit in the integer¡¯s binary representation.
+You could assume no leading zero bit in the integerâ€™s binary representation.
 Example 1:
 Input: 5
 Output: 2

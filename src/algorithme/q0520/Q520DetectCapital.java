@@ -1,4 +1,4 @@
-package algorithme.q0520;
+ï»¿package algorithme.q0520;
 
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
@@ -41,7 +41,7 @@ public class Q520DetectCapital {
 		int num = 0;
 		char[] ar = word.toCharArray();
 		for (int i = 0; i < ar.length; i++) {
-			if (ar[i] < 'a') // capitalÊıÁ¿
+			if (ar[i] < 'a') // capitalæ•°é‡
 				num++;
 		}
 		return num == 0 || num == ar.length || (num == 1 && ar[0] < 'a');
@@ -51,7 +51,7 @@ public class Q520DetectCapital {
 	public boolean detectCapitalUse1(String word) {
 		int num = 0;
 		for (int i = 0; i < word.length(); i++) {
-			if (word.charAt(i) < 'a') // capitalÊıÁ¿
+			if (word.charAt(i) < 'a') // capitalæ•°é‡
 				num++;
 		}
 		return num == 0 || num == word.length() || (num == 1 && word.charAt(0) < 'a');
@@ -65,20 +65,20 @@ public class Q520DetectCapital {
 		char[] ar = word.toCharArray();
 		boolean isLegal = true;
 		if (ar[0] <= 'Z') {
-			if (ar[1] <= 'Z') { // È«´óĞ´
+			if (ar[1] <= 'Z') { // å…¨å¤§å†™
 				for (int i = 2; i < ar.length; i++) {
 					if (ar[i] > 'Z') {
 						return false;
 					}
 				}
-			} else { // ½öÊ××ÖÄ¸´óĞ´
+			} else { // ä»…é¦–å­—æ¯å¤§å†™
 				for (int i = 2; i < ar.length; i++) {
 					if (ar[i] <= 'Z') {
 						return false;
 					}
 				}
 			}
-		} else { // È«Ğ¡Ğ´
+		} else { // å…¨å°å†™
 			for (int i = 1; i < ar.length; i++) {
 				if (ar[i] <= 'Z') {
 					return false;

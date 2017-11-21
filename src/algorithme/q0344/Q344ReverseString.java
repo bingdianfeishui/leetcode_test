@@ -1,4 +1,4 @@
-package algorithme.q0344;
+﻿package algorithme.q0344;
 
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;

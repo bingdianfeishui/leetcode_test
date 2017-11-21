@@ -1,4 +1,4 @@
-package algorithme.q0001;
+锘縫ackage algorithme.q0001;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -34,7 +34,7 @@ public class Q001TwoSum {
 		TimerUtils.batchRunAll(Q001TwoSum.class, times, argsArr);
 	}
 
-	//排序后从两头找和，然后根据元素值循环找index
+	//鎺掑簭鍚庝粠涓ゅご鎵惧拰锛岀劧鍚庢牴鎹厓绱犲�煎惊鐜壘index
 	@RunTimer
 	public int[] twoSum(int[] nums, int target) {
 		int[] temNum = nums.clone();

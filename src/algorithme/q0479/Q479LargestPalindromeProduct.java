@@ -1,4 +1,4 @@
-package algorithme.q0479;
+﻿package algorithme.q0479;
 
 import java.util.Arrays;
 

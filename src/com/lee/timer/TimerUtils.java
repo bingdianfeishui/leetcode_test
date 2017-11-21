@@ -1,4 +1,4 @@
-package com.lee.timer;
+ï»¿package com.lee.timer;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -7,15 +7,15 @@ import java.util.List;
 
 public class TimerUtils {
 	/**
-	 * ´«ÈëÒ»×é²ÎÊı£¬Ö´ĞĞclazzÀàÖĞËùÓĞ´øÓĞ@{@link RunTimer}×¢½âµÄ·½·¨£¬¿É¶à´ÎÖ´ĞĞ£¬²¢¼ÆÊ± ×¢Òâ£º
-	 * ÒªÖ´ĞĞ´Ë·½·¨£¬ÒªÇóËùÓĞ´øÓĞ@RunTimer×¢½âµÄ·½·¨¶¼¾ßÓĞÏàÍ¬µÄĞÎ²ÎĞÎÊ½£¬±ÈÈçÈ«²¿Îª¿Õ²Î
+	 * ä¼ å…¥ä¸€ç»„å‚æ•°ï¼Œæ‰§è¡Œclazzç±»ä¸­æ‰€æœ‰å¸¦æœ‰@{@link RunTimer}æ³¨è§£çš„æ–¹æ³•ï¼Œå¯å¤šæ¬¡æ‰§è¡Œï¼Œå¹¶è®¡æ—¶ æ³¨æ„ï¼š
+	 * è¦æ‰§è¡Œæ­¤æ–¹æ³•ï¼Œè¦æ±‚æ‰€æœ‰å¸¦æœ‰@RunTimeræ³¨è§£çš„æ–¹æ³•éƒ½å…·æœ‰ç›¸åŒçš„å½¢å‚å½¢å¼ï¼Œæ¯”å¦‚å…¨éƒ¨ä¸ºç©ºå‚
 	 * 
 	 * @param clazz
-	 *            ´ıËÑË÷µÄÄ¿±êÀà
+	 *            å¾…æœç´¢çš„ç›®æ ‡ç±»
 	 * @param times
-	 *            ÖØ¸´Ö´ĞĞµÄ´ÎÊı
+	 *            é‡å¤æ‰§è¡Œçš„æ¬¡æ•°
 	 * @param args
-	 *            ·½·¨µÄÈë²Î
+	 *            æ–¹æ³•çš„å…¥å‚
 	 */
 	public static void runAll(Class<?> clazz, int times, Object... args) {
 		try {
@@ -30,49 +30,49 @@ public class TimerUtils {
 	}
 
 	/**
-	 * @see #runAll(Class, int, Object...) ÆäÖĞ times=1
+	 * @see #runAll(Class, int, Object...) å…¶ä¸­ times=1
 	 * @param clazz
-	 *            ´ıËÑË÷µÄÄ¿±êÀà
+	 *            å¾…æœç´¢çš„ç›®æ ‡ç±»
 	 * @param args
-	 *            ·½·¨Èë²Î
+	 *            æ–¹æ³•å…¥å‚
 	 */
 	public static void runAll(Class<?> clazz, Object... args) {
 		runAll(clazz, 1, args);
 	}
 
 	/**
-	 * @see #runAll(Class, int, Object...) ÆäÖĞargsÎª¿ÕÊı×é£¬¼´ÒªÇóËùÓĞ´øÓĞ×¢½âµÄ·½·¨¶¼ÊÇ¿Õ²Î
+	 * @see #runAll(Class, int, Object...) å…¶ä¸­argsä¸ºç©ºæ•°ç»„ï¼Œå³è¦æ±‚æ‰€æœ‰å¸¦æœ‰æ³¨è§£çš„æ–¹æ³•éƒ½æ˜¯ç©ºå‚
 	 * @param clazz
-	 *            ´ıËÑË÷µÄÄ¿±êÀà
+	 *            å¾…æœç´¢çš„ç›®æ ‡ç±»
 	 * @param times
-	 *            ÖØ¸´Ö´ĞĞ´ÎÊı
+	 *            é‡å¤æ‰§è¡Œæ¬¡æ•°
 	 */
 	public static void runAll(Class<?> clazz, int times) {
 		runAll(clazz, times, new Object[] {});
 	}
 
 	/**
-	 * @see #runAll(Class, int, Object...) ÆäÖĞ times=1, argsÎª¿ÕÊı×é£¬¼´ÒªÇóËùÓĞ´øÓĞ×¢½âµÄ·½·¨¶¼ÊÇ¿Õ²Î
-	 *      ÒªÇóËùÓĞ´øÓĞ×¢½âµÄ·½·¨¶¼ÊÇ¿Õ²Î
+	 * @see #runAll(Class, int, Object...) å…¶ä¸­ times=1, argsä¸ºç©ºæ•°ç»„ï¼Œå³è¦æ±‚æ‰€æœ‰å¸¦æœ‰æ³¨è§£çš„æ–¹æ³•éƒ½æ˜¯ç©ºå‚
+	 *      è¦æ±‚æ‰€æœ‰å¸¦æœ‰æ³¨è§£çš„æ–¹æ³•éƒ½æ˜¯ç©ºå‚
 	 * @param clazz
-	 *            ´ıËÑË÷µÄÄ¿±êÀà
+	 *            å¾…æœç´¢çš„ç›®æ ‡ç±»
 	 */
 	public static void runAll(Class<?> clazz) {
 		runAll(clazz, 1);
 	}
 
 	/**
-	 * ¶à´ÎÖ´ĞĞclazzÀàÖĞµÄ·½·¨ÃûÎª methodName µÄ·½·¨²¢¼ÆÊ±£¬¿ÉÒÔ´«Èë²ÎÊı¡£
-	 * µ±clazzÀàÖĞÓĞ¶à¸ö·½·¨µÄ·½·¨Ãû¶¼ÎªmethodNameÊ±£¬½öÆ¥ÅäµÚÒ»¸öÕÒµ½µÄ·½·¨¡£
+	 * å¤šæ¬¡æ‰§è¡Œclazzç±»ä¸­çš„æ–¹æ³•åä¸º methodName çš„æ–¹æ³•å¹¶è®¡æ—¶ï¼Œå¯ä»¥ä¼ å…¥å‚æ•°ã€‚
+	 * å½“clazzç±»ä¸­æœ‰å¤šä¸ªæ–¹æ³•çš„æ–¹æ³•åéƒ½ä¸ºmethodNameæ—¶ï¼Œä»…åŒ¹é…ç¬¬ä¸€ä¸ªæ‰¾åˆ°çš„æ–¹æ³•ã€‚
 	 * 
 	 * @param clazz
-	 *            ´ıËÑË÷µÄÄ¿±êÀà
+	 *            å¾…æœç´¢çš„ç›®æ ‡ç±»
 	 * @param methodName
-	 *            Ä¿±ê·½·¨Ãû
+	 *            ç›®æ ‡æ–¹æ³•å
 	 * @param times
-	 *            ÖØ¸´Ö´ĞĞ´ÎÊı
+	 *            é‡å¤æ‰§è¡Œæ¬¡æ•°
 	 * @param args
-	 *            ·½·¨Èë²Î
+	 *            æ–¹æ³•å…¥å‚
 	 * @return
 	 */
 	public static Object run(Class<?> clazz, String methodName, int times, Object... args) {
@@ -87,7 +87,7 @@ public class TimerUtils {
 				}
 			}
 			if (method == null)
-				throw new IllegalAccessException(clazz + " ÀàÖĞ²»´æÔÚÃûÎª \"" + methodName + "\"µÄ·½·¨");
+				throw new IllegalAccessException(clazz + " ç±»ä¸­ä¸å­˜åœ¨åä¸º \"" + methodName + "\"çš„æ–¹æ³•");
 			return invoke(clazz, method, times, args);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -96,7 +96,7 @@ public class TimerUtils {
 	}
 
 	/**
-	 * @see #run(Class, String, int, Object...) ÆäÖĞtimes = 1
+	 * @see #run(Class, String, int, Object...) å…¶ä¸­times = 1
 	 * @param clazz
 	 * @param methodName
 	 * @param args
@@ -107,7 +107,7 @@ public class TimerUtils {
 	}
 
 	/**
-	 * @see #run(Class, String, int, Object...) Ã»ÓĞ·½·¨Èë²Î£¬¼´¸Ã·½·¨µÄÈë²ÎÎªvoid
+	 * @see #run(Class, String, int, Object...) æ²¡æœ‰æ–¹æ³•å…¥å‚ï¼Œå³è¯¥æ–¹æ³•çš„å…¥å‚ä¸ºvoid
 	 * @param clazz
 	 * @param methodName
 	 * @param times
@@ -118,7 +118,7 @@ public class TimerUtils {
 	}
 
 	/**
-	 * @see #run(Class, String, int, Object...) ÆäÖĞ argsÎª¿ÕÊı×é Object[]{}£¬ times=1
+	 * @see #run(Class, String, int, Object...) å…¶ä¸­ argsä¸ºç©ºæ•°ç»„ Object[]{}ï¼Œ times=1
 	 * @param clazz
 	 * @param methodName
 	 * @return
@@ -128,8 +128,8 @@ public class TimerUtils {
 	}
 
 	/**
-	 * ²ÉÓÃÅúÁ¿²ÎÊı£¬¶à´ÎÅúÁ¿µ÷ÓÃclazzÀàÖĞ·½·¨ÃûÎªmethodNameµÄ·½·¨¡£Èô·½·¨´øÓĞ@{@link RunTimer}±ê¼Ç£¬Ôò¼ÆÊ±²¢´òÓ¡
-	 * @param clazz ËÑË÷Ä¿±êÀà
+	 * é‡‡ç”¨æ‰¹é‡å‚æ•°ï¼Œå¤šæ¬¡æ‰¹é‡è°ƒç”¨clazzç±»ä¸­æ–¹æ³•åä¸ºmethodNameçš„æ–¹æ³•ã€‚è‹¥æ–¹æ³•å¸¦æœ‰@{@link RunTimer}æ ‡è®°ï¼Œåˆ™è®¡æ—¶å¹¶æ‰“å°
+	 * @param clazz æœç´¢ç›®æ ‡ç±»
 	 * @param methodName
 	 * @param times
 	 * @param argsArr
@@ -148,7 +148,7 @@ public class TimerUtils {
 				}
 			}
 			if (method == null)
-				throw new IllegalAccessException(clazz + " ÀàÖĞ²»´æÔÚÃûÎª \"" + methodName + "\"µÄ·½·¨");
+				throw new IllegalAccessException(clazz + " ç±»ä¸­ä¸å­˜åœ¨åä¸º \"" + methodName + "\"çš„æ–¹æ³•");
 
 			Object[] objs =  batchInvoke(clazz, method, times, tc, argsArr);
 			tc.showTime(method);
@@ -170,7 +170,7 @@ public class TimerUtils {
 				}
 			}
 			if (method == null)
-				throw new IllegalAccessException(clazz + " ÀàÖĞ²»´æÔÚÃûÎª \"" + methodName + "\"µÄ·½·¨");
+				throw new IllegalAccessException(clazz + " ç±»ä¸­ä¸å­˜åœ¨åä¸º \"" + methodName + "\"çš„æ–¹æ³•");
 			
 			TimmerController tc = new TimmerController();
 			Object[] objs =  batchInvoke(clazz, method, times, tc, argsArr);
@@ -239,17 +239,17 @@ public class TimerUtils {
 	
 	
 	/**
-	 * ¶à´ÎÖØ¸´Ö´ĞĞclazzÖĞµÄmethod·½·¨²¢¼ÇÂ¼Êä³ö×Ü¹²ÓÃÊ± ×¢Òâ£ºÎªÊ¹²â¶¨µÄÊ±¼ä¸ü×¼È·£¬»áÔÚ¼ÆÊ±Ç°ÏÈµ¥¶Àµ÷ÓÃÁ½´ÎÄ¿±ê·½·¨£¬ÔÙ¿ªÊ¼¼ÆÊ±µ÷ÓÃ¡£
+	 * å¤šæ¬¡é‡å¤æ‰§è¡Œclazzä¸­çš„methodæ–¹æ³•å¹¶è®°å½•è¾“å‡ºæ€»å…±ç”¨æ—¶ æ³¨æ„ï¼šä¸ºä½¿æµ‹å®šçš„æ—¶é—´æ›´å‡†ç¡®ï¼Œä¼šåœ¨è®¡æ—¶å‰å…ˆå•ç‹¬è°ƒç”¨ä¸¤æ¬¡ç›®æ ‡æ–¹æ³•ï¼Œå†å¼€å§‹è®¡æ—¶è°ƒç”¨ã€‚
 	 * 
 	 * @param clazz
-	 *            Ä¿±êClass
+	 *            ç›®æ ‡Class
 	 * @param method
-	 *            Ä¿±ê·½·¨
+	 *            ç›®æ ‡æ–¹æ³•
 	 * @param times
-	 *            ÖØ¸´´ÎÊı
+	 *            é‡å¤æ¬¡æ•°
 	 * @param args
-	 *            ·½·¨Èë²Î
-	 * @return ×îºóÒ»´ÎÖ´ĞĞmethodµÄ·µ»ØÖµ
+	 *            æ–¹æ³•å…¥å‚
+	 * @return æœ€åä¸€æ¬¡æ‰§è¡Œmethodçš„è¿”å›å€¼
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 * @throws InvocationTargetException
@@ -262,7 +262,7 @@ public class TimerUtils {
 		System.out.println("Invoke method [" + method.getName() + "] " + times + " times...");
 		Object test = clazz.newInstance();
 		Object ret;
-		ret = method.invoke(test, args);// ÏÈµ÷ÓÃ2´Î³õÊ¼»¯»·¾³
+		ret = method.invoke(test, args);// å…ˆè°ƒç”¨2æ¬¡åˆå§‹åŒ–ç¯å¢ƒ
 		ret = method.invoke(test, args);
 		tc.setStart(System.nanoTime());
 		while (times-- > 0) {
@@ -275,18 +275,18 @@ public class TimerUtils {
 	}
 
 	/**
-	 * ´«ÈëÅúÁ¿²ÎÊı£¬¶à´ÎÖ´ĞĞclazzÖĞµÄmethod·½·¨²¢¼ÇÂ¼Êä³ö×Ü¹²ÓÃÊ± ×¢Òâ£ºÎªÊ¹²â¶¨µÄÊ±¼ä¸ü×¼È·£¬»áÔÚ¼ÆÊ±Ç°ÏÈµ¥¶Àµ÷ÓÃÁ½´ÎÄ¿±ê·½·¨£¬ÔÙ¿ªÊ¼¼ÆÊ±µ÷ÓÃ¡£
+	 * ä¼ å…¥æ‰¹é‡å‚æ•°ï¼Œå¤šæ¬¡æ‰§è¡Œclazzä¸­çš„methodæ–¹æ³•å¹¶è®°å½•è¾“å‡ºæ€»å…±ç”¨æ—¶ æ³¨æ„ï¼šä¸ºä½¿æµ‹å®šçš„æ—¶é—´æ›´å‡†ç¡®ï¼Œä¼šåœ¨è®¡æ—¶å‰å…ˆå•ç‹¬è°ƒç”¨ä¸¤æ¬¡ç›®æ ‡æ–¹æ³•ï¼Œå†å¼€å§‹è®¡æ—¶è°ƒç”¨ã€‚
 	 * 
 	 * @param clazz
-	 *            Ä¿±êClass
+	 *            ç›®æ ‡Class
 	 * @param method
-	 *            Ä¿±ê·½·¨
+	 *            ç›®æ ‡æ–¹æ³•
 	 * @param times
-	 *            ÖØ¸´´ÎÊı
+	 *            é‡å¤æ¬¡æ•°
 	 * @param tc 
 	 * @param argsArr
-	 *            ÅúÁ¿·½·¨Èë²ÎÊı×é
-	 * @return ÅúÁ¿Ö´ĞĞmethodµÄ·µ»ØÖµ¡£Èôµ¥×é²ÎÊıÖØ¸´Ö´ĞĞ¶à´Î£¬Ö»¼ÇÂ¼×îºóÒ»´ÎÖ´ĞĞµÄ·µ»ØÖµ¡£
+	 *            æ‰¹é‡æ–¹æ³•å…¥å‚æ•°ç»„
+	 * @return æ‰¹é‡æ‰§è¡Œmethodçš„è¿”å›å€¼ã€‚è‹¥å•ç»„å‚æ•°é‡å¤æ‰§è¡Œå¤šæ¬¡ï¼Œåªè®°å½•æœ€åä¸€æ¬¡æ‰§è¡Œçš„è¿”å›å€¼ã€‚
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 * @throws InvocationTargetException
@@ -299,7 +299,7 @@ public class TimerUtils {
 		Object[] retArr = new Object[argsArr.length];
 		Object test = clazz.newInstance();
 		for(int i = 0; i < 10; i++)
-			retArr[0] = method.invoke(test, argsArr[0]);// ÏÈµ÷ÓÃ10´Î³õÊ¼»¯»·¾³
+			retArr[0] = method.invoke(test, argsArr[0]);// å…ˆè°ƒç”¨10æ¬¡åˆå§‹åŒ–ç¯å¢ƒ
 		tc.setStart(System.nanoTime());
 		for (int i = 0; i < argsArr.length; i++) {
 			int t = times;
@@ -319,8 +319,8 @@ public class TimerUtils {
 		Object[] retArr = new Object[argsArr.length];
 		Object test = clazz.newInstance();
 		for(int i = 0; i < 10; i++)
-			retArr[0] = method.invoke(test, argsArr[0]);// ÏÈµ÷ÓÃ10´Î³õÊ¼»¯»·¾³
-		System.out.println("Ô¤ÈÈÖ´ĞĞÍê³É£¬¿ªÊ¼ÕıÊ½Ö´ĞĞ...");
+			retArr[0] = method.invoke(test, argsArr[0]);// å…ˆè°ƒç”¨10æ¬¡åˆå§‹åŒ–ç¯å¢ƒ
+		System.out.println("é¢„çƒ­æ‰§è¡Œå®Œæˆï¼Œå¼€å§‹æ­£å¼æ‰§è¡Œ...");
 		tc.setStart(System.nanoTime());
 		for (int i = 0; i < argsArr.length; i++) {
 			int t = times;

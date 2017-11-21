@@ -1,4 +1,4 @@
-package algorithme.q0008;
+ï»¿package algorithme.q0008;
 
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
@@ -46,24 +46,24 @@ public class Q008String2Integer {
     public int myAtoi(String str) {
 		if(str == null || str.length() == 0) return 0;
         
-		//È¥Ç°µ¼¿Õ¸ñ
-		int index = 0;	//ÓĞĞ§µÄÊı×Ö×Ö·û¿ªÊ¼Î»ÖÃÖ¸Õë
+		//å»å‰å¯¼ç©ºæ ¼
+		int index = 0;	//æœ‰æ•ˆçš„æ•°å­—å­—ç¬¦å¼€å§‹ä½ç½®æŒ‡é’ˆ
 		while(str.charAt(index) == ' ' && index < str.length()) index++;
 		
-		//ÅĞ¶Ï·ûºÅ
+		//åˆ¤æ–­ç¬¦å·
         boolean positive = true;
         if(str.charAt(index) == '-' || str.charAt(index) == '+') {
         	positive = str.charAt(index) == '+';
         	index++;
         }
         
-        //ÒÀ´ÎÅĞ¶Ï¸÷¸ö×Ö·û
+        //ä¾æ¬¡åˆ¤æ–­å„ä¸ªå­—ç¬¦
         int result = 0;
         for (int i = index; i < str.length(); i++) {
 			int num = str.charAt(i) - '0';
-			if(num < 0 || num > 9) break;	//Óöµ½·ÇÊı×Ö×Ö·ûÔòÍ£Ö¹£¬ËùÒÔ²»Ö§³Ö¶ººÅ·Ö¸ôµÄÊı×Ö¼°¿ÆÑ§¼ÆÊı·¨µÈ£¬1,000|10e3.
+			if(num < 0 || num > 9) break;	//é‡åˆ°éæ•°å­—å­—ç¬¦åˆ™åœæ­¢ï¼Œæ‰€ä»¥ä¸æ”¯æŒé€—å·åˆ†éš”çš„æ•°å­—åŠç§‘å­¦è®¡æ•°æ³•ç­‰ï¼Œ1,000|10e3.
 			result = result * 10 + num;		
-			if(i - index >= 10 || result < 0) {	//Èô³¬¹ı10Î»»ò½á¹ûÒÑĞ¡ÓÚ0£¬Ôò±íÊ¾ÒÑ¾­Òç³ö
+			if(i - index >= 10 || result < 0) {	//è‹¥è¶…è¿‡10ä½æˆ–ç»“æœå·²å°äº0ï¼Œåˆ™è¡¨ç¤ºå·²ç»æº¢å‡º
 				if(!positive && result == Integer.MIN_VALUE) return Integer.MIN_VALUE;
 				return positive ? Integer.MAX_VALUE : Integer.MIN_VALUE;
 			}
@@ -73,7 +73,7 @@ public class Q008String2Integer {
     }
 
 	/**
-	 * ²Î¿¼Integer·½·¨
+	 * å‚è€ƒIntegeræ–¹æ³•
 	 * @see Integer#parseInt(String, int)
 	 * @param str
 	 * @return

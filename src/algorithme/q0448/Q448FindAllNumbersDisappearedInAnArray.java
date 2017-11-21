@@ -1,4 +1,4 @@
-package algorithme.q0448;
+ï»¿package algorithme.q0448;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,7 +11,7 @@ import com.lee.timer.TimerUtils;
 
 /**
  * 448. Find All Numbers Disappeared in an Array
- * Given an array of integers where 1 ¡Ü a[i] ¡Ü n (n = size of array), some elements appear twice and others appear once.
+ * Given an array of integers where 1 â‰¤ a[i] â‰¤ n (n = size of array), some elements appear twice and others appear once.
 
 Find all the elements of [1, n] inclusive that do not appear in this array.
 
@@ -37,7 +37,7 @@ public class Q448FindAllNumbersDisappearedInAnArray {
 		TimerUtils.batchRunAll(Q448FindAllNumbersDisappearedInAnArray.class, times, argsArr);
 	}
 
-	//ÏÈÅÅĞòºó°¤¸öÅĞ¶Ï
+	//å…ˆæ’åºåæŒ¨ä¸ªåˆ¤æ–­
 	@RunTimer
 	public List<Integer> findDisappearedNumbers(int[] nums) {
 		List<Integer> list = new ArrayList<>();
@@ -62,7 +62,7 @@ public class Q448FindAllNumbersDisappearedInAnArray {
 		return list;
 	}
 
-	//Í¨¹ıHashSetÅĞ¶Ï
+	//é€šè¿‡HashSetåˆ¤æ–­
 	@RunTimer
 	public List<Integer> findDisappearedNumbers1(int[] nums) {
 		List<Integer> list = new ArrayList<>();
@@ -76,7 +76,7 @@ public class Q448FindAllNumbersDisappearedInAnArray {
 		return list;
 	}
 
-	//Í¨¹ıÒ»¸öboolean±êÖ¾Î»Êı×éÅĞ¶Ï
+	//é€šè¿‡ä¸€ä¸ªbooleanæ ‡å¿—ä½æ•°ç»„åˆ¤æ–­
 	@RunTimer
 	public List<Integer> findDisappearedNumbers2(int[] nums) {
 		List<Integer> list = new ArrayList<>();

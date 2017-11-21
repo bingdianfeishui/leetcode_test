@@ -1,4 +1,4 @@
-package algorithme.q0007;
+﻿package algorithme.q0007;
 
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;

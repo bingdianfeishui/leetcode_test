@@ -1,4 +1,4 @@
-package algorithme.q0104;
+ï»¿package algorithme.q0104;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -100,7 +100,7 @@ public class Q104MaximumDepthOfBinaryTree {
 		 return root;
 	}
 
-	// µİ¹éDFS
+	// é€’å½’DFS
 	@RunTimer
 	public int maxDepth1(TreeNode root) {
 		if (root == null)
@@ -119,7 +119,7 @@ public class Q104MaximumDepthOfBinaryTree {
 			return 1;
 		int max = 0;
 		Stack<TreeNode> stack = new Stack<>();
-		Stack<Integer> level = new Stack<>();	//ÓÃÀ´¼ÇÂ¼stackÖĞÃ¿¸önodeµÄÉî¶È
+		Stack<Integer> level = new Stack<>();	//ç”¨æ¥è®°å½•stackä¸­æ¯ä¸ªnodeçš„æ·±åº¦
 		stack.push(root);
 		level.push(1);
 		while (!stack.isEmpty()) {

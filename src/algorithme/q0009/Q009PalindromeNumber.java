@@ -1,4 +1,4 @@
-package algorithme.q0009;
+ï»¿package algorithme.q0009;
 
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
@@ -13,7 +13,7 @@ public class Q009PalindromeNumber {
 
 	}
 
-	//ÌáÈ¡¶Ô³ÆÎ»ÅĞ¶Ï
+	//æå–å¯¹ç§°ä½åˆ¤æ–­
 	@RunTimer
 	public boolean isPalindrome(int x) {
 		if (x < 0)
@@ -32,7 +32,7 @@ public class Q009PalindromeNumber {
 		return true;
 	}
 
-	//ÌáÈ¡¶Ô³ÆÎ»À´ÅĞ¶Ï£¬²»ÓÃMath.pow(a, b)
+	//æå–å¯¹ç§°ä½æ¥åˆ¤æ–­ï¼Œä¸ç”¨Math.pow(a, b)
 	@RunTimer
 	public boolean isPalindrome2(int x) {
 		if (x < 0)
@@ -64,7 +64,7 @@ public class Q009PalindromeNumber {
 		return true;
 	}
 
-	//¹¹Ôì¶Ô³ÆÊıÈ»ºóÅĞ¶ÏÊÇ·ñÏàµÈ¡£Òç³öÔò²»ÏàµÈ¡£
+	//æ„é€ å¯¹ç§°æ•°ç„¶ååˆ¤æ–­æ˜¯å¦ç›¸ç­‰ã€‚æº¢å‡ºåˆ™ä¸ç›¸ç­‰ã€‚
 	@RunTimer
 	public boolean isPalindrome3(int x) {
 		if (x < 0)

@@ -1,4 +1,4 @@
-package algorithme.q0485;
+ï»¿package algorithme.q0485;
 
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
@@ -70,7 +70,7 @@ public class Q485MaxConsecutiveOnes {
 
 	@RunTimer
 	public int findMaxConsecutiveOnes3(int[] nums) {
-		// ¿¼ÂÇ´ÓÁ½²àÍ¬Ê±±éÀúÊı×é use the idea just like quicksort
+		// è€ƒè™‘ä»ä¸¤ä¾§åŒæ—¶éå†æ•°ç»„ use the idea just like quicksort
 		int leftNum = 0;
 		int rightNum = 0;
 		int maxConsecutive = 0;

@@ -1,4 +1,4 @@
-package algorithme.q0463;
+ï»¿package algorithme.q0463;
 
 import com.lee.timer.RunTimer;
 import com.lee.timer.TimerUtils;
@@ -49,7 +49,7 @@ public class Q463IslandPerimeter {
 		TimerUtils.batchRunAll(Q463IslandPerimeter.class, times, argsArr);
 	}
 
-	//Çî¾Ù O(mn) ÊÊÓÃÓÚË®ÓòÓëÂ½µØÃæ»ıÏàµ±Ê±¡£µ±Ë®Óò±ÈÂ½µØÃæ»ı´óºÜ¶àÊ±£¬Ó¦¸ÃÓÃDFS£¨ÒòÎªËùÓĞÂ½µØÁ¬½ÓÔÚÒ»Æğ£©
+	//ç©·ä¸¾ O(mn) é€‚ç”¨äºæ°´åŸŸä¸é™†åœ°é¢ç§¯ç›¸å½“æ—¶ã€‚å½“æ°´åŸŸæ¯”é™†åœ°é¢ç§¯å¤§å¾ˆå¤šæ—¶ï¼Œåº”è¯¥ç”¨DFSï¼ˆå› ä¸ºæ‰€æœ‰é™†åœ°è¿æ¥åœ¨ä¸€èµ·ï¼‰
 	@RunTimer
 	public int islandPerimeter0(int[][] grid) {
 		int l = grid[0].length;
@@ -99,15 +99,15 @@ public class Q463IslandPerimeter {
 	    return perimeter;
 	}
 	
-	//DFS depth-first-search Éî¶ÈÓÅÏÈËÑË÷Ëã·¨  µİ¹é
+	//DFS depth-first-search æ·±åº¦ä¼˜å…ˆæœç´¢ç®—æ³•  é€’å½’
 	@RunTimer
 	public int islandPerimeter2(int[][] grid) {
         if (grid == null) return 0;
         
-        //´Ë´¦±ØĞëÉî¶È¸´ÖÆÔ´¶şÎ¬Êı×éÓÃÓÚDFS£¬ÒòÎª¸ÃDFSËã·¨ÖĞ¸Ä±äÁËÔ­À´Êı×éµÄÖµ£¬²»¿ÉÖØ¸´Ê¹ÓÃ¡£
-        //Ò²¿ÉÒÔÓÃÁíÒ»¸ö±êÖ¾Êı×éÀ´±êÊ¶ËÑË÷¹ıµÄÇø¿é£¬¾Í¿É²»ÓÃ¸Ä±äÔ´Êı×éµÄÖµ¡£
+        //æ­¤å¤„å¿…é¡»æ·±åº¦å¤åˆ¶æºäºŒç»´æ•°ç»„ç”¨äºDFSï¼Œå› ä¸ºè¯¥DFSç®—æ³•ä¸­æ”¹å˜äº†åŸæ¥æ•°ç»„çš„å€¼ï¼Œä¸å¯é‡å¤ä½¿ç”¨ã€‚
+        //ä¹Ÿå¯ä»¥ç”¨å¦ä¸€ä¸ªæ ‡å¿—æ•°ç»„æ¥æ ‡è¯†æœç´¢è¿‡çš„åŒºå—ï¼Œå°±å¯ä¸ç”¨æ”¹å˜æºæ•°ç»„çš„å€¼ã€‚
         int[][] tmpGrid = new int[grid.length][grid[0].length];
-        for (int i = 0; i < tmpGrid.length; i++) {	//Éî¶È¸´ÖÆÄÚ²ãÊı×é
+        for (int i = 0; i < tmpGrid.length; i++) {	//æ·±åº¦å¤åˆ¶å†…å±‚æ•°ç»„
 			System.arraycopy(grid[i], 0, tmpGrid[i], 0, grid[i].length);
 		}
         

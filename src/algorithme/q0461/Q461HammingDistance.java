@@ -1,4 +1,4 @@
-package algorithme.q0461;
+ï»¿package algorithme.q0461;
 
 import java.util.Arrays;
 import java.util.List;
@@ -9,13 +9,13 @@ import com.lee.timer.TimerUtils;
 
 /**
  * 461. Hamming Distance
- * ººÃ÷¾àÀë£º Á½¸öÕûÊıÔÚ¶ş½øÖÆĞÎÊ½ÏÂ£¬²»ÏàµÈµÄbitµÄÎ»Êı
+ * æ±‰æ˜è·ç¦»ï¼š ä¸¤ä¸ªæ•´æ•°åœ¨äºŒè¿›åˆ¶å½¢å¼ä¸‹ï¼Œä¸ç›¸ç­‰çš„bitçš„ä½æ•°
  * The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
 
 Given two integers x and y, calculate the Hamming distance.
 
 Note:
-0 ¡Ü x, y < 2^31.
+0 â‰¤ x, y < 2^31.
 
 Example:
 
@@ -26,7 +26,7 @@ Output: 2
 Explanation:
 1   (0 0 0 1)
 4   (0 1 0 0)
-       ¡ü   ¡ü
+       â†‘   â†‘
 
 The above arrows point to positions where the corresponding bits are different.
  * @author 60238
@@ -68,7 +68,7 @@ public class Q461HammingDistance {
 	}
 
 	//My
-	//Òì»ò½á¹û×ª»»Îª×Ö·û´®´¦Àí
+	//å¼‚æˆ–ç»“æœè½¬æ¢ä¸ºå­—ç¬¦ä¸²å¤„ç†
 	@RunTimer
 	public int hammingDistance(int x, int y) {
 		int xor = x ^ y;
@@ -84,7 +84,7 @@ public class Q461HammingDistance {
 	}
 
 	//My
-	//Òì»ò½á¹ûÒÆÎ»ÅĞ¶Ï
+	//å¼‚æˆ–ç»“æœç§»ä½åˆ¤æ–­
 	@RunTimer
 	public int hammingDistance1(int x, int y) {
 		int xor = x ^ y;
